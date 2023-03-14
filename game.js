@@ -43,11 +43,14 @@ var zoom=1;
 //   '           ',
 // ];
 function setup() {
-  song=loadSound('1011406_Prelude.mp3');
+  song=loadSound('1011406_Prelude.mp3',ok);
   player1=new Player1(200,200,0);
   player2=new Player2(200,250,0);
   createCanvas(windowWidth,windowHeight);
   Load(blocks,worldMap);
+}
+function ok(){
+song.play();
 }
 function draw() {
   //if(!song.isPlaying()){
