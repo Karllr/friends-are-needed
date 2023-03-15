@@ -1,3 +1,4 @@
+var song;
 var keys=[];
 var levelWidth;
 var levelHeight;
@@ -34,7 +35,6 @@ var cam={
   x:0,
   y:0
 };
-var song;
 var zoom=1;
 // var testMap=[
 //   '   1 11    ',
